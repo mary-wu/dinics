@@ -65,8 +65,16 @@ function createEditor() {
         .attr('class', 'button')
         .attr("name", "step")
         .attr("type", "button")
-        .text("Step")
+        .text("Show Steps")
         .on('click', stepNetworkFlow_click);
+
+    // // Add a step button to walk through each iteration in calculating  max flow
+    // var dinicsButton = cmdButtonContainer.append('button')
+    //     .attr('class', 'button')
+    //     .attr("name", "step_dinics")
+    //     .attr("type", "button")
+    //     .text("Dinic's Steps")
+    //     .on('click', stepNetworkFlow_click);
 
     // Create our object container
     var objContainer = body.append('div')
